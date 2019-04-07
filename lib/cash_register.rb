@@ -17,6 +17,9 @@ class CashRegister
       percentage = (100.0 - @discount.to_f) / 100.0
       @total = @total * percentage
       "After the discount, the total comes to $#{@total.to_i}."
+    else
+      "There is no discount to apply."
+    end
   end
   
 end
